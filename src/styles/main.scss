@@ -1,0 +1,16 @@
+@import "./common.scss";
+@import "./themes.scss";
+
+.main {
+  display: flex;
+  position: relative;
+  min-height: 200px;
+  background-color: #f1f1f1;
+  margin: 1rem;
+  padding: 2rem;
+  border: 1px solid $primary-color;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
