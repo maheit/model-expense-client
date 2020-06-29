@@ -85,6 +85,7 @@ module.exports = {
     mainFields: ["module", "browser", "main"],
     alias: {
       app: path.resolve(__dirname, "./src/"),
+      components: path.resolve(__dirname, "./src/components"),
     },
   },
 
@@ -128,5 +129,13 @@ module.exports = {
     historyApiFallback: true,
     open: "Google Chrome",
     openPage: [""],
+    proxy: [
+      {
+        context: ["/api"],
+        target: "http://localhost:5000",
+        pathRewrite: { "^/api": "" },
+        secure: false,
+      },
+    ],
   },
 };

@@ -21,6 +21,10 @@
     <% } %> <% for (var jsId in htmlWebpackPlugin.options.files.js) { %>
     <script src="<%= htmlWebpackPlugin.options.files.js[jsId] %>"></script>
     <% } %>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <% if (htmlWebpackPlugin.options.unsupportedBrowser) { %>
@@ -29,7 +33,7 @@
         display: block;
       }
     </style>
-    <div class="unsupported-browser">
+    <div className="unsupported-browser">
       Sorry, your browser is not supported. Please upgrade to the latest version
       or switch your browser to use this site. See
       <a href="http://outdatedbrowser.com/">outdatedbrowser.com</a>

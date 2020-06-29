@@ -1,7 +1,7 @@
 // scriptLoading	{'blocking'|'defer'}
 const pagesList = {
   index: {
-    chunk: "./src/index.tsx",
+    chunk: "./src/dashboard/index.tsx",
     js: [], // to add additional external resources js to load like jquery
     css: [], // to add additional external resources css
     title: "App",

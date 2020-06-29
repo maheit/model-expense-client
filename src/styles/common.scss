@@ -1,3 +1,7 @@
+body {
+  margin: unset;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -7,4 +11,8 @@
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.full-height {
+  height: 100% !important;
 }
